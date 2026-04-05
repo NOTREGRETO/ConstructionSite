@@ -47,8 +47,9 @@ export const GuidingValues = () => {
                                 </span>
                             </div>
                             
-                            <h2 className="text-4xl lg:text-[5vw] font-[1000] text-black leading-[0.9] tracking-tighter uppercase max-w-[600px]">
-                                COMMITTED TO QUALITY AND INTEGRITY
+                            <h2 className="text-3xl lg:text-[2.8vw] font-[1000] text-black leading-[1.1] tracking-tighter uppercase max-w-[500px]">
+                                COMMITTED TO QUALITY<br />
+                                AND INTEGRITY
                             </h2>
                         </div>
 

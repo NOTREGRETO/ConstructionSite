@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
+import { Inter } from "next/font/google";
 import "./globals.css";
-import { SmoothScroll } from "@/components/layout/SmoothScroll";
+import { SmoothScroll } from "../components/layout/SmoothScroll";
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
 
 export const metadata: Metadata = {
   title: "Engineering Tomorrow | Titan Construction",
@@ -13,8 +20,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark scroll-smooth">
-      <body style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }} className="antialiased bg-black">
+    <html lang="en" className={`dark scroll-smooth ${inter.variable}`}>
+      <body className="antialiased bg-black font-sans">
         <SmoothScroll>
           {children}
         </SmoothScroll>

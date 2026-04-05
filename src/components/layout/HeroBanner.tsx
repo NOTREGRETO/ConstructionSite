@@ -7,30 +7,32 @@ import { motion } from "framer-motion";
 export const HeroBanner = () => {
     return (
         <section className="relative w-full h-screen overflow-hidden bg-black flex flex-col justify-center">
-            {/* Cinematic Background Image */}
-            <div className="absolute inset-0 z-0">
+            {/* Cinematic Background with Discovery Overlay */}
+            <div className="absolute inset-0 z-0 overflow-hidden">
                 <Image 
-                    src="/scaffolding-workers.png" // Using building skeleton visual
-                    alt="Construction site skeleton"
+                    src="/scaffolding-workers.png" 
+                    alt="Construction site depth"
                     fill
-                    className="object-cover opacity-60 contrast-125"
+                    sizes="100vw"
+                    className="object-cover opacity-70 group-hover:scale-105 transition-transform duration-1000"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/20" />
+                <div className="absolute inset-0 bg-black/40 z-10" />
+                <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/80 z-20" />
             </div>
 
             {/* Massive Brutalist Text */}
-            <div className="relative z-10 max-w-[1700px] mx-auto px-6 lg:px-12 w-full pt-20">
+            <div className="relative z-30 max-w-[1700px] mx-auto px-6 lg:px-12 w-full pt-20">
                 <motion.div 
                     initial={{ y: 30, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 1.2, ease: "easeOut" }}
                     className="flex flex-col relative"
                 >
-                    <h1 className="text-[8.5vw] font-[1000] text-white leading-[0.8] tracking-tighter uppercase whitespace-nowrap">
+                    <h1 className="text-[6.5vw] font-[900] text-white leading-[1.1] tracking-tighter uppercase whitespace-nowrap drop-shadow-2xl">
                         BUILDING STRENGTH
                     </h1>
                     
-                    <h1 className="text-[8.5vw] font-[1000] text-white leading-[0.8] tracking-tighter uppercase ml-[30vw] -mt-4">
+                    <h1 className="text-[6.5vw] font-[900] text-white leading-[1.1] tracking-tighter uppercase ml-[15vw] lg:ml-[25vw] mt-2 drop-shadow-2xl">
                         WITH INTEGRITY
                     </h1>
                 </motion.div>

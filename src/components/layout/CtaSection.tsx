@@ -13,6 +13,7 @@ export const CtaSection = () => {
                     src="/cta-worker.png"
                     alt="Professional Construction Worker"
                     fill
+                    sizes="100vw"
                     className="object-cover"
                     priority
                 />
@@ -24,16 +25,18 @@ export const CtaSection = () => {
             <div className="max-w-[1700px] w-full mx-auto px-6 lg:px-12 relative z-10">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     
-                    {/* Left side: Heading */}
+                    {/* Left side: Heading - Moved thoda left & Limited width */}
                     <motion.div
-                        initial={{ opacity: 0, x: -50 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.8, ease: "easeOut" }}
+                        initial={{ opacity: 0, x: -80 }}
+                        whileInView={{ opacity: 1, x: -20 }}
+                        transition={{ duration: 1, ease: "easeOut" }}
                         viewport={{ once: true }}
+                        className="lg:-ml-20 max-w-[700px]"
                     >
-                        <h2 className="text-4xl lg:text-[4vw] font-[1000] text-white leading-[1.1] tracking-tighter uppercase whitespace-normal">
+                        <h2 className="text-4xl lg:text-[3vw] font-[1000] text-white leading-[1.1] tracking-tighter uppercase whitespace-normal drop-shadow-2xl">
                             Building strong<br />
-                            foundations, delivering<br />
+                            foundations,<br />
+                            delivering<br />
                             excellence every time
                         </h2>
                     </motion.div>

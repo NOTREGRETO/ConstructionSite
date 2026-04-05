@@ -5,8 +5,8 @@ import { ArrowUpRight } from "lucide-react";
 import { motion } from "framer-motion";
 
 export const Newsletter = ({ 
-    imageSrc = "/loader-yellow-final.png", 
-    imageAlt = "Industrial Front Loader",
+    imageSrc = "/realistic-loader.png", 
+    imageAlt = "High-Fidelity Wheel Loader Authority",
     bgColor = "#F3F3F3"
 }: { 
     imageSrc?: string; 

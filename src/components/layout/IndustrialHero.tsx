@@ -39,6 +39,7 @@ export const IndustrialHero = () => {
                             src={heroImages[currentImage]} 
                             alt={`Hero Background ${currentImage + 1}`}
                             fill
+                            sizes="100vw"
                             className="object-cover"
                             priority
                         />
@@ -59,7 +60,7 @@ export const IndustrialHero = () => {
                             // BUILDING WITH INTEGRITY AND EXCELLENCE
                         </p>
                         
-                        <h1 className="text-white text-5xl lg:text-[100px] font-[1000] leading-[0.9] tracking-tighter uppercase mb-10 drop-shadow-2xl">
+                        <h1 className="text-white text-5xl lg:text-[100px] font-[1000] leading-[0.95] tracking-tighter uppercase mb-10 drop-shadow-2xl">
                             BUILDING<br />
                             CONSTRUCTION<br />
                             SOLUTIONS
