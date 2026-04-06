@@ -10,7 +10,7 @@ export const HeroBanner = () => {
             {/* Cinematic Background with Discovery Overlay */}
             <div className="absolute inset-0 z-0 overflow-hidden">
                 <Image 
-                    src="/scaffolding-workers.png" 
+                    src="/indian_corporate.png" 
                     alt="Construction site depth"
                     fill
                     sizes="100vw"

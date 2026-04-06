@@ -8,31 +8,31 @@ import { motion, AnimatePresence } from "framer-motion";
 const projects = [
     {
         id: 1,
-        title: "SUNRISE MEADOW HOMES",
-        label: "NEW BUILD",
-        description: "Constructed a modern high-rise with innovative design, ensuring safety, sustainability, and exceptional quality throughout construction.",
-        image: "/project-glass.png"
+        title: "THE ORION TOWERS, MUMBAI",
+        label: "HIGH-RISE",
+        description: "A monumental 70-story luxury residential skyscraper in the heart of Mumbai, featuring seismic-resilience and premium glass engineering.",
+        image: "/mumbai_hero.png"
     },
     {
         id: 2,
-        title: "HARBORLINE LIVING PROJECT",
-        label: "RENOVATION",
-        description: "Built luxury villas with contemporary design, spacious interiors, and lasting structural integrity for discerning clients.",
-        image: "/news-bridge.png"
+        title: "RAJMAHAL HERITAGE FUSION",
+        label: "HERITAGE",
+        description: "Masterful fusion of traditional Indian stone-jali architecture with sleek modern facades, creating a unique institutional landmark.",
+        image: "/indian_heritage_build.png"
     },
     {
         id: 3,
-        title: "TITAN INDUSTRIAL HUB",
-        label: "INDUSTRIAL",
-        description: "Large scale manufacturing facility with specialized structural engineering and heavy-duty logistics integration.",
-        image: "/news-excavator.png"
+        title: "BENGALURU TECH CENTER",
+        label: "COMMERCIAL",
+        description: "A massive Class-A corporate IT park featuring ultra-efficient structural design and world-class sustainable landscaping.",
+        image: "/indian_corporate.png"
     },
     {
         id: 4,
-        title: "CRESTVIEW APARTMENTS",
+        title: "COORG LUXURY VALLEY VILLAS",
         label: "RESIDENTIAL",
-        description: "Premium urban living spaces featuring sustainable materials and modern architectural aesthetics.",
-        image: "/news-modular.png"
+        description: "Ultra-luxury hillside villas in the Western Ghats, combining traditional wood-and-stone aesthetics with modern luxury living.",
+        image: "/project_villas.png"
     }
 ];
 

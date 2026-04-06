@@ -1,7 +1,6 @@
 import { Footer } from "@/components/layout/Footer";
-import { Newsletter } from "@/components/layout/Newsletter";
 import { ContactSection } from "@/components/layout/ContactSection";
-import { NewsInsights } from "@/components/layout/NewsInsights";
+
 import { CtaSection } from "@/components/layout/CtaSection";
 import { Testimonials } from "@/components/layout/Testimonials";
 import { GuidingValues } from "@/components/layout/GuidingValues";
@@ -30,9 +29,8 @@ export default function Home() {
       <GuidingValues />
       <Testimonials />
       <CtaSection />
-      <NewsInsights />
       <ContactSection />
-      <Newsletter />
+
       <Footer />
     </main>
   );

@@ -17,7 +17,7 @@ export const AboutCompany = () => {
                     className="relative w-full h-full"
                 >
                     <Image 
-                        src="/scaffolding-workers.png"
+                        src="/indian_heritage_build.png"
                         alt="Industrial team at work"
                         fill
                         className="object-cover contrast-[1.05]"

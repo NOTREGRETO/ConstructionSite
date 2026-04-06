@@ -10,7 +10,7 @@ export const CtaSection = () => {
             {/* Background Image */}
             <div className="absolute inset-0">
                 <Image 
-                    src="/cta-worker.png"
+                    src="/smiling_indian_engineer.png"
                     alt="Professional Construction Worker"
                     fill
                     sizes="100vw"

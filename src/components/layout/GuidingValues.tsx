@@ -29,8 +29,8 @@ export const GuidingValues = () => {
                         className="relative h-[500px] lg:h-[700px] w-full"
                     >
                         <Image 
-                            src="/scaffolding-workers.png" 
-                            alt="Workers on Scaffolding"
+                            src="/indian_rope_painter.png" 
+                            alt="Indian Rope Painter on Mumbai Skyscraper"
                             fill
                             className="object-cover grayscale-[0.2] contrast-[1.1]"
                             priority

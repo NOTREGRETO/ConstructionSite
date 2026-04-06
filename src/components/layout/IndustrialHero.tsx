@@ -6,10 +6,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ArrowUpRight, Phone } from "lucide-react";
 
 const heroImages = [
-    "/team-collaboration.png",
-    "/scaffolding-workers.png",
-    "/project-glass.png",
-    "/news-engineers-1.png"
+    "/mumbai_hero.png",
+    "/indian_engineers.png",
+    "/indian_action.png"
 ];
 
 export const IndustrialHero = () => {
@@ -105,39 +104,47 @@ export const IndustrialHero = () => {
                 </div>
             </motion.div>
             
-            {/* Nav Component Placeholder for Hero Alignment */}
+            {/* Cinematic Editorial Header */}
             <div className="absolute top-0 left-0 w-full z-50 p-6 lg:p-12 hidden lg:flex items-center justify-between pointer-events-none">
-                <div className="bg-white p-6 pointer-events-auto">
-                    <div className="flex items-center gap-2">
-                        <div className="w-10 h-10 bg-[#FFC107] flex items-center justify-center">
-                            <div className="w-6 h-6 border-2 border-black rotate-45" />
-                        </div>
-                        <span className="text-2xl font-[1000] tracking-tighter text-black">KONTRIC</span>
-                    </div>
-                </div>
-                
-                <div className="flex items-center gap-8 pointer-events-auto">
-                     <nav className="flex items-center gap-8 text-white/90 text-[11px] font-[1000] tracking-widest uppercase">
-                        <a href="#" className="hover:text-[#FFC107] transition-colors">Home</a>
-                        <a href="#" className="hover:text-[#FFC107] transition-colors">Pages</a>
-                        <a href="#" className="hover:text-[#FFC107] transition-colors">Services</a>
-                        <a href="#" className="hover:text-[#FFC107] transition-colors">Projects</a>
-                        <a href="#" className="hover:text-[#FFC107] transition-colors">Contact Us</a>
+                {/* Left Side: Navigation Links */}
+                <div className="flex-1 flex justify-start pointer-events-auto">
+                    <nav className="flex items-center gap-10 text-white text-[13px] font-[1000] tracking-widest uppercase">
+                        <a href="/" className="relative group border-b-2 border-[#FFC107] pb-1 hover:text-[#FFC107] transition-colors">Home</a>
+                        <a href="/about" className="hover:text-[#FFC107] transition-colors">About Us</a>
+                        <a href="/projects" className="hover:text-[#FFC107] transition-colors">Projects</a>
+                        <a href="/projects" className="hover:text-[#FFC107] transition-colors">Services</a>
+                        <a href="/about" className="hover:text-[#FFC107] transition-colors">Contact Us</a>
                     </nav>
-                    
-                    <div className="flex items-center gap-4 bg-white p-6">
-                        <div className="w-10 h-10 bg-[#FFC107] flex items-center justify-center rounded-full">
-                            <Phone className="w-5 h-5 text-black" />
+                </div>
+
+                {/* Center: Floating Logo */}
+                <div className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 flex items-center pointer-events-auto">
+                    <Image 
+                        src="/logo-transparent.png" 
+                        alt="XNLC LANDMARK" 
+                        width={1200} 
+                        height={400} 
+                        className="h-56 w-auto object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)]"
+                        priority
+                    />
+                </div>
+
+                {/* Right Side: Call & CTA */}
+                <div className="flex-1 flex justify-end items-center gap-6 pointer-events-auto">
+                    <div className="flex items-center bg-white shadow-2xl">
+                        <div className="bg-[#FFC107] p-5 flex items-center justify-center">
+                            <Phone className="w-4 h-4 text-black" />
                         </div>
-                        <div>
-                            <p className="text-[10px] text-black/60 font-bold uppercase tracking-widest">Call us:</p>
-                            <p className="text-[13px] text-black font-[1000] whitespace-nowrap">+1890 123 456</p>
+                        <div className="px-6 py-2">
+                            <p className="text-[10px] text-black/60 font-bold uppercase tracking-widest leading-none mb-1">Call us:</p>
+                            <p className="text-[13px] text-black font-[1000] tracking-tight">+91 98765 43210</p>
                         </div>
                     </div>
-                    
-                    <div className="bg-black p-6 border-l border-white/10 hover:bg-[#FFC107] transition-colors group">
-                        <ArrowUpRight className="w-6 h-6 text-white group-hover:text-black" />
-                    </div>
+
+                    <button className="bg-black hover:bg-[#FFC107] text-white hover:text-black px-8 py-5 transition-all duration-300 flex items-center gap-4 group">
+                        <ArrowUpRight className="w-4 h-4 group-hover:rotate-45 transition-transform" />
+                        <span className="text-[12px] font-[1000] tracking-widest uppercase text-nowrap">Get in Touch</span>
+                    </button>
                 </div>
             </div>
         </section>

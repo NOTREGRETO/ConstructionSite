@@ -47,11 +47,11 @@ export const ContactSection = () => {
                     <div className="flex flex-col md:flex-row items-stretch h-auto md:h-32 border-t border-black/5">
                         <div className="flex-1 bg-[#FFC107] p-8 md:p-10 flex flex-col justify-center gap-1">
                             <span className="text-[10px] font-black uppercase tracking-widest text-black/40">Contact Us:</span>
-                            <span className="text-2xl font-[1000] text-black tracking-tighter whitespace-nowrap">+1890 123 456</span>
+                            <span className="text-2xl font-[1000] text-black tracking-tighter whitespace-nowrap">+91 98765 43210</span>
                         </div>
                         <div className="flex-1 bg-black p-8 md:p-10 flex flex-col justify-center gap-1">
                             <span className="text-[10px] font-black uppercase tracking-widest text-white/40">Email Address:</span>
-                            <span className="text-xl lg:text-[22px] font-[1000] text-white tracking-tighter whitespace-nowrap">SUPPORT@TITAN.COM</span>
+                            <span className="text-xl lg:text-[22px] font-[1000] text-white tracking-tighter whitespace-nowrap">INFO@XNLC-LANDMARK.COM</span>
                         </div>
                     </div>
                 </div>
@@ -59,8 +59,8 @@ export const ContactSection = () => {
                 {/* Right: Worker Image Section (Full Height) */}
                 <div className="w-full lg:w-[55%] relative min-h-[500px]">
                     <Image 
-                        src="/team-collaboration.png"
-                        alt="Construction Team Collaborating"
+                        src="/indian_planning_team.png"
+                        alt="Indian Professional Engineering Team"
                         fill
                         className="object-cover"
                         priority

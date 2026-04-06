@@ -76,8 +76,8 @@ export const ServicesSection = () => {
                     {/* Right: Architectural Image Contained in Grid */}
                     <div className="relative h-[400px] lg:h-auto w-full overflow-hidden">
                         <Image 
-                            src="/services-arch.png"
-                            alt="Modern Architectural High-rise"
+                            src="/indian_heritage_build.png"
+                            alt="Modern Indian Heritage-Fusion Building"
                             fill
                             className="object-cover contrast-[1.05]"
                             priority

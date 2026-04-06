@@ -38,7 +38,7 @@ export const WhoWeAre = () => {
                     {/* Panel 1: Construction Image */}
                     <div className="aspect-[4/5] relative overflow-hidden">
                         <Image 
-                            src="/scaffolding-workers.png" 
+                            src="/mumbai_hero.png" 
                             alt="Construction site"
                             fill
                             className="object-cover hover:scale-110 transition-transform duration-700"
@@ -70,7 +70,7 @@ export const WhoWeAre = () => {
                     {/* Panel 3: Modern Building Image */}
                     <div className="aspect-[4/5] relative overflow-hidden">
                         <Image 
-                            src="/project-glass.png" 
+                            src="/indian_workers.png" 
                             alt="Modern Architecture"
                             fill
                             className="object-cover hover:scale-110 transition-transform duration-700"
