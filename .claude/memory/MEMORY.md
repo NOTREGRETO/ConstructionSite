@@ -1,0 +1,2 @@
+- [Project: Construction Site](project_context.md) — Titan Construction Next.js 16 high-fidelity site with industrial branding, multi-page architecture
+- [Tech Stack](tech_stack.md) — Next.js 16.2.2, React 19, TypeScript, Tailwind 4, animations (Framer Motion, GSAP, Lenis)
