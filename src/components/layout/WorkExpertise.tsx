@@ -1,7 +1,6 @@
 "use client";
 
 import { Handshake, Construction, ShieldCheck } from "lucide-react";
-import { motion } from "framer-motion";
 
 const services = [
     {
