@@ -5,6 +5,7 @@ import Image from "next/image"
 import { ArrowLeft, ArrowRight, ArrowUpRight } from "lucide-react"
 import { motion } from "framer-motion"
 import { Project } from "@/types/project"
+import Link from "next/link"
 
 export default function FeaturedProjectsClient({
   projects,
@@ -92,9 +93,12 @@ export default function FeaturedProjectsClient({
                 </div>
 
                 {/* White Overlapping Content Card (Bottom-Left Alignment) */}
-                <div className="absolute bottom-[-10px] left-[-10px] lg:bottom-0 lg:left-0 bg-white p-8 lg:p-14 w-full lg:w-[80%] shadow-2xl z-20">
+                <Link 
+                  href={`/projects/${project.slug?.current}`}
+                  className="absolute bottom-[-10px] left-[-0px] lg:bottom-0 lg:left-0 bg-white p-8 lg:p-14 w-full lg:w-[80%] shadow-2xl z-20 group/card block"
+                >
                   <div className="space-y-6">
-                    <h3 className="text-2xl lg:text-[28px] font-[1000] text-black tracking-tighter uppercase leading-none">
+                    <h3 className="text-2xl lg:text-[28px] font-[1000] text-black tracking-tighter uppercase leading-none group-hover/card:text-[#FFC107] transition-colors">
                       {project.title}
                     </h3>
                     {project.description && (
@@ -107,7 +111,7 @@ export default function FeaturedProjectsClient({
                   <div className="absolute bottom-0 right-0 w-12 h-14 bg-[#FFC107] flex items-center justify-center hover:bg-black transition-colors cursor-pointer group/btn">
                     <ArrowUpRight className="w-5 h-5 text-black group-hover/btn:text-white transition-colors" />
                   </div>
-                </div>
+                </Link>
               </div>
             ))}
           </motion.div>

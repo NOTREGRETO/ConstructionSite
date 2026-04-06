@@ -10,8 +10,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Engineering Tomorrow | Titan Construction",
-  description: "A world-class construction company specializing in residential, commercial, and industrial engineering.",
+  title: "XNLC LANDMARK | Building the Future",
+  description: "A premier construction company specializing in residential, industrial, and heritage-fusion building solutions across India.",
 };
 
 export default function RootLayout({
